@@ -9,4 +9,5 @@ This repository will contain every piece of material about the subject. It will 
 ## Contact
 
 Trainer: 
+
 Assistant: ivo.kostovski@gmail.com
