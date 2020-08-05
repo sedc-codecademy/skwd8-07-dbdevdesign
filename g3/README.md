@@ -8,6 +8,6 @@ This repository will contain every piece of material about the subject. It will 
 
 ## Contact
 
-Trainer: 
+Trainer: slave_tasev@yahoo.com
 
 Assistant: ivo.kostovski@gmail.com
