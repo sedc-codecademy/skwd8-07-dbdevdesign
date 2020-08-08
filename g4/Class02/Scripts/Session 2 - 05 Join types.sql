@@ -7,6 +7,9 @@ CREATE TABLE TableB (idB int);
 Insert into TableA values (1),(2)--,(3)
 Insert into TableB values (2),(3)--,(4)
 
+select * from TableA
+select * from TableB
+
 -- Cross join
 select * 
 from TableA
@@ -28,7 +31,17 @@ select *
 from TableA
 RIGHT JOIN TableB ON idA=idB
 
+select * 
+from TableB
+LEFT JOIN TableA ON idA=idB
+
+
 -- FULL JOIN
 select * 
 from TableA
 FULL JOIN TableB ON idA=idB
+
+select * 
+from TableA
+Cross join TableB
+ORDER BY idA,idB
