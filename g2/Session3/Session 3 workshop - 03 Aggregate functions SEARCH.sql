@@ -34,3 +34,7 @@ GROUP BY BusinessEntityId,b.Name
 HAVING  Max(TotalPrice) > 4*AVG(TotalPrice)
 GO
 
+-- bonus example for string_agg
+
+SELECT o.ID, STRING_AGG(p.Name, ', ') as ProductsFROM [Order] as oINNER JOIN OrderDetails as od on o.ID = od.OrderIdINNER JOIN Product as p on od.ProductId = p.IDGROUP BY o.IDORDER BY o.ID
+
