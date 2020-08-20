@@ -34,3 +34,16 @@ EXEC uspFindProductByName 'Raw bars', @count output, @cena output
 SELECT @count AS 'Number of products found'
 select @cena as Cena;
 go
+
+-- the example of manipulation transactions 
+
+begin tran
+
+delete from Customer
+where Id = 101
+
+select top 5 * from Customer
+order by id desc
+
+rollback tran
+commit tran
